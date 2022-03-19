@@ -5,9 +5,6 @@ import java.util.*;
 public class Interview {
     static boolean key = true;
     Queue <String> queue = new LinkedList<>();
-    void peek(){
-        System.out.println("Next candidate is : "+queue.peek()+"\n");
-    }
     void dequeue(){
         queue.poll();
         System.out.println(queue.peek()+" is exit.\n");
