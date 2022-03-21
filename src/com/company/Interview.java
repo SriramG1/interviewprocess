@@ -5,10 +5,16 @@ import java.util.*;
 public class Interview {
     static boolean key = true;
     Queue <String> queue = new LinkedList<>();
-    void dequeue(){
-        String nextPerson=queue.peek();
-        queue.poll();
-        System.out.println(nextPerson+" is exit.\n");
+    void dequeue() {
+        String nextPerson = queue.peek();
+        if (queue.isEmpty()){
+            System.out.println("\nNo candidates Available\n");
+        }
+        else{
+            queue.poll();
+            System.out.println(nextPerson + " is exit.\n");
+        }
+
     }
     void enqueue(){
         Scanner in = new Scanner(System.in);
