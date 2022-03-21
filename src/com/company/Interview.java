@@ -5,6 +5,7 @@ import java.util.*;
 public class Interview {
     static boolean key = true;
     Queue <String> queue = new LinkedList<>();
+    Queue <String> room = new LinkedList<>();
     void dequeue() {
         String nextPerson = queue.peek();
         if (queue.isEmpty()){
@@ -14,7 +15,6 @@ public class Interview {
             queue.poll();
             System.out.println(nextPerson + " is exit.\n");
         }
-
     }
     void enqueue(){
         Scanner in = new Scanner(System.in);
